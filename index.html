@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umaira Sadaf | Creative Portfolio with Working Email Capture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Umaira Sadaf</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Umaira Sadaf</h1>
+            <p>Creative Developer | Code Projects | Full Stack Enthusiast</p>
+            <button class="cta-button">See My Work</button>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>Project One</h3>
+                    <p>Description of your first project. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>Project Two</h3>
+                    <p>Description of your second project. Features working backend integration.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>Project Three</h3>
+                    <p>Description of your third project. Demonstrates responsive design.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION -->
+    <section id="subscribe" class="subscribe-section">
+        <div class="subscribe-container">
+            <h2>Stay Updated</h2>
+            <p>Get notified when I release new projects and tutorials</p>
+            
+            <form name="subscribe" method="POST" netlify id="subscribeform">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name" 
+                        required>
+                </div>
+                
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com" 
+                        required>
+                </div>
+                
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            
+            <div class="success-message" id="successMessage" style="display: none;">
+                ✓ Thanks for subscribing! You'll hear from me soon.
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (OPTIONAL) -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Have a question or want to collaborate? Send me a message!</p>
+            
+            <form name="contact" method="POST" netlify>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Umaira Sadaf. All rights reserved.</p>
+            <p>Built with HTML, CSS, JavaScript & Netlify Forms</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
